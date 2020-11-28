@@ -15,8 +15,11 @@ $deck = new Deck();
 // Get Started with 52 Standard Palying Cards.
 $deck->setStandardPlayingCards();
 
-// Shuffle to get random cards.
-$deck->shuffle();
+// Shuffle: Using PHP mt_rand()
+//$deck->shuffle2();
+
+// Shuffle: using PHP shuffle()
+$deck->shuffle();     
 
 // Create new Hand
 $hand = new Hand();

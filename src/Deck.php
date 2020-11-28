@@ -39,6 +39,24 @@
   }
 
   /**
+   * Shuffle the deck Method 2
+   */
+  public function shuffle2() {
+
+    $total_cards = $this->getCardCount();
+
+    foreach($this->cards as $index => $card) {
+     
+      // Get random Index
+      $random_index = mt_rand(1, $total_cards) - 1;
+      $temp_card = $this->cards[$random_index];
+
+      $this->cards[$index] = $temp_card;
+      $this->cards[$random_index] = $card;
+    }
+  }
+
+  /**
    * Take a card off the top of the deck
    * 
    * @return Card
