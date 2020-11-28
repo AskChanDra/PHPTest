@@ -30,14 +30,14 @@ class TaskBTest extends TestCase {
 
       $a_low  = ['10s', 'js', 'qc', 'ac', 'kc'];
 
-      $flush = TaskB::is_straight($a_low);
+      $flush = TaskB::is_straight_flush($a_low);
 
       $this->assertTrue($flush);
 
       $a_high  = ['ad', '5d', '2d', '4d', '3d'];
 
-      $flush = TaskB::is_straight($a_high);
-      
+      $flush = TaskB::is_straight_flush($a_high);
+
       $this->assertTrue($flush);
 
     }
