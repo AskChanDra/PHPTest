@@ -17,7 +17,7 @@ class TaskB {
       return $a[0] - $a[4] === 4;
   }
 
-  public static function is_sright_flush($h){
+  public static function is_straight_flush($h){
     $p = array_flip([2,3,4,5,6,7,8,9,1,'j','q','k','a']);
     foreach($h as $c) {$a[] = $p[substr($c, 0, 1)];$b[] = substr($c, -1);}
     rsort($a);
