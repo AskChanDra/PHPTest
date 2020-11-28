@@ -19,3 +19,8 @@ composer install
   npm test
   ```
 
+   OR 
+
+````sh
+php ./vendor/bin/phpunit 
+````
