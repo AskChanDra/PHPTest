@@ -1,0 +1,19 @@
+{
+    "name": "phptest/task",
+    "description": "PHP Technical Task",
+    "authors": [
+        {
+            "name": "AskChandra",
+            "email": "cpthapa@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPTest\\Task\\": "src/"
+        }
+    }
+}
